@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pipnova-FX</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Pipnova-FX</div>
+
+        <div class="header-icon">
+            🔔
+        </div>
+    </header>
+
+
+    <!-- WELCOME -->
+    <section class="welcome">
+        <h1>Welcome back 👋</h1>
+        <p>Trade smarter. Trade with Pipnova-FX.</p>
+    </section>
+
+
+    <!-- BALANCE -->
+    <section class="balance-card">
+        <div class="balance-title">
+            Account Balance
+        </div>
+
+        <div class="balance">
+            $10,000.00
+        </div>
+
+        <div class="profit">
+            +$245.80 &nbsp; (+2.45%)
+        </div>
+    </section>
+
+
+    <!-- QUICK ACTIONS -->
+    <section class="section">
+
+        <div class="section-title">
+            <h2>Quick Actions</h2>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <small>Available</small>
+                <strong>$9,754</strong>
+            </div>
+
+            <div class="stat-card">
+                <small>Profit</small>
+                <strong class="buy">+$245</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MARKET -->
+    <section class="section">
+
+        <div class="section-title">
+            <h2>Market</h2>
+            <span>View all</span>
+        </div>
+
+        <div class="market-list">
+
+            <!-- EURUSD -->
+            <div class="market-card">
+                <div>
+                    <div class="market-name">EUR/USD</div>
+                    <small>Euro / US Dollar</small>
+                </div>
+
+                <div class="market-price">
+                    <strong>1.1742</strong>
+                    <small>+0.42%</small>
+                </div>
+            </div>
+
+
+            <!-- GBPUSD -->
+            <div class="market-card">
+                <div>
+                    <div class="market-name">GBP/USD</div>
+                    <small>British Pound / US Dollar</small>
+                </div>
+
+                <div class="market-price">
+                    <strong>1.3485</strong>
+                    <small>+0.31%</small>
+                </div>
+            </div>
+
+
+            <!-- USDJPY -->
+            <div class="market-card">
+                <div>
+                    <div class="market-name">USD/JPY</div>
+                    <small>US Dollar / Japanese Yen</small>
+                </div>
+
+                <div class="market-price">
+                    <strong>148.25</strong>
+                    <small>+0.18%</small>
+                </div>
+            </div>
+
+
+            <!-- XAUUSD -->
+            <div class="market-card">
+                <div>
+                    <div class="market-name">XAU/USD</div>
+                    <small>Gold / US Dollar</small>
+                </div>
+
+                <div class="market-price">
+                    <strong>3,752.40</strong>
+                    <small>+0.67%</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRADE BUTTON -->
+    <section class="section">
+
+        <button class="btn btn-primary">
+            Start Trading
+        </button>
+
+    </section>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+
+        <div class="nav-item active">
+            <div class="nav-icon">⌂</div>
+            <span>Home</span>
+        </div>
+
+        <div class="nav-item">
+            <div class="nav-icon">▣</div>
+            <span>Markets</span>
+        </div>
+
+        <div class="nav-item">
+            <div class="nav-icon">↗</div>
+            <span>Trade</span>
+        </div>
+
+        <div class="nav-item">
+            <div class="nav-icon">◉</div>
+            <span>Profile</span>
+        </div>
+
+    </nav>
+
+</div>
+
+</body>
+</html> 

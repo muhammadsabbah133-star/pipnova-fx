@@ -1,0 +1,72 @@
+// ==========================================
+// PIPNOVAFX - VERSION 1
+// Main JavaScript
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Welcome message
+    console.log("PipnovaFX loaded successfully 🚀");
+
+    // Current year
+    const year = document.querySelector("#year");
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+    // Navigation buttons
+    const navButtons = document.querySelectorAll("[data-page]");
+
+    navButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const page = button.getAttribute("data-page");
+
+            document.querySelectorAll(".page").forEach(section => {
+                section.style.display = "none";
+            });
+
+            const target = document.getElementById(page);
+
+            if (target) {
+                target.style.display = "block";
+            }
+        });
+    });
+
+    // Deposit button
+    const depositBtn = document.querySelector("#depositBtn");
+
+    if (depositBtn) {
+        depositBtn.addEventListener("click", () => {
+            alert("Deposit feature will be connected in the next version.");
+        });
+    }
+
+    // Withdraw button
+    const withdrawBtn = document.querySelector("#withdrawBtn");
+
+    if (withdrawBtn) {
+        withdrawBtn.addEventListener("click", () => {
+            alert("Withdrawal feature will be connected in the next version.");
+        });
+    }
+
+    // Login button
+    const loginBtn = document.querySelector("#loginBtn");
+
+    if (loginBtn) {
+        loginBtn.addEventListener("click", () => {
+            alert("Login system coming soon.");
+        });
+    }
+
+    // Register button
+    const registerBtn = document.querySelector("#registerBtn");
+
+    if (registerBtn) {
+        registerBtn.addEventListener("click", () => {
+            alert("Registration system coming soon.");
+        });
+    }
+
+}); 

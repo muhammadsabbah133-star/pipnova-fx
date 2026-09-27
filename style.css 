@@ -1,0 +1,341 @@
+/* =================================
+   PIPNOVA-FX — VERSION 1
+   Main Styles
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #080b10;
+    --card: #111720;
+    --card2: #161d27;
+    --primary: #00d4a8;
+    --primary-dark: #00a982;
+    --text: #ffffff;
+    --muted: #8b95a5;
+    --border: #222b36;
+    --danger: #ff4d5a;
+    --success: #20d99a;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* Main App */
+.app {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    margin: auto;
+    background: var(--bg);
+    padding-bottom: 80px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--card2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome */
+.welcome {
+    padding: 25px 18px 15px;
+}
+
+.welcome h1 {
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.welcome p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Balance Card */
+.balance-card {
+    margin: 15px 18px;
+    padding: 22px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #102b2a, #111720);
+    border: 1px solid #16443d;
+}
+
+.balance-title {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.balance {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.profit {
+    color: var(--success);
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Section */
+.section {
+    padding: 15px 18px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 19px;
+}
+
+.section-title span {
+    color: var(--primary);
+    font-size: 13px;
+}
+
+/* Market Cards */
+.market-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.market-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.market-name {
+    font-weight: 700;
+}
+
+.market-price {
+    text-align: right;
+}
+
+.market-price strong {
+    display: block;
+    font-size: 15px;
+}
+
+.market-price small {
+    color: var(--success);
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 13px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #00140f;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-dark {
+    background: var(--card2);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* Input */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: white;
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--primary);
+}
+
+/* Login / Register */
+.auth-container {
+    min-height: 100vh;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-logo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.auth-card {
+    background: var(--card);
+    padding: 22px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+/* Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    height: 70px;
+    background: #0d1219;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--muted);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: var(--primary);
+}
+
+.nav-icon {
+    font-size: 21px;
+}
+
+/* Trading */
+.trade-card {
+    margin: 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.trade-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buy {
+    color: var(--success);
+}
+
+.sell {
+    color: var(--danger);
+}
+
+/* Stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.stat-card small {
+    color: var(--muted);
+}
+
+.stat-card strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+/* Hide */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 360px) {
+    .welcome h1 {
+        font-size: 23px;
+    }
+
+    .balance {
+        font-size: 27px;
+    }
+} 
